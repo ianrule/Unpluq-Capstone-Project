@@ -1,0 +1,28 @@
+%default-text {
+    font-family: Montserrat;
+    font-style: normal;
+}
+h1 {
+    @extend %default-text;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+h2 {
+    @extend %default-text;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+h3 {
+    @extend %default-text;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+}
+h4 {
+    @extend %default-text;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}

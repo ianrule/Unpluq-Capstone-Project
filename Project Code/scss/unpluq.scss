@@ -1,0 +1,27 @@
+/*---------------------------
+    CSS Index  
+*****************************
+
+Default (Application Wide)
+    D1) Variables
+    D2) Typography
+
+Miscellaneous
+
+-----------------------------*/
+
+/*-------------------------------
+    Default (Application Wide)
+---------------------------------*/
+
+/* D1) Variables */
+@import 'default/variables';
+
+/* D2) Typography */
+@import 'default/typography';
+
+/*-------------------------------
+    Miscellaneous
+---------------------------------*/
+
+@import 'miscellaneous/misc';
