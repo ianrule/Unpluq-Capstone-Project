@@ -83,6 +83,7 @@ Miscellaneous
     position: relative;
     width: auto;
     height: auto;
+    overflow:auto;
     padding: 0.2;
     margin-top: 10px;
     margin-left: 10px;
@@ -157,4 +158,5 @@ Miscellaneous
     display: table;
     margin-right: auto;
   }
+
   /*# sourceMappingURL=unpluq.css.map */
