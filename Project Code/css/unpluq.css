@@ -67,7 +67,7 @@ Miscellaneous
   h4 {
     font-size: 16px;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 5px;
   }
   
   /*-------------------------------
@@ -84,7 +84,19 @@ Miscellaneous
     width: auto;
     height: auto;
     overflow:auto;
-    padding: 0.2;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--background-colors-tertiary);
+  }
+
+  .websiteItemScrollable {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow-y: scroll; height:100px;
+    padding: 0;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -134,6 +146,7 @@ Miscellaneous
   .header-center{
     text-align:center;
     color: var(--label-text-colors-primary);
+    padding: 0;
   }
 
   a{
@@ -157,6 +170,18 @@ Miscellaneous
   .day-list{
     display: table;
     margin-right: auto;
+  }
+
+  .vertical-list{
+    list-style-type: none;
+  }
+
+  .vertical-checkbox{
+    color:white;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Montserrat;
+
   }
 
   /*# sourceMappingURL=unpluq.css.map */
