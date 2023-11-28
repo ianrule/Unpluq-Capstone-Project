@@ -3,8 +3,14 @@
     <link rel="stylesheet" href="css/unpluq.css">
 </head>
 
+<!--
+    I would suggest this should be the default style for the 'body' class, but just in case I edited just this body.
+-->
 <body style="margin:0;padding:0;background-color:black">
 
+    <!--
+        Navbar
+    -->
     <div class="card">
         <div class = "header">
             <div class = "header-left">
@@ -18,17 +24,24 @@
             </div>
         </div>
 
+        <!--
+            Schedule Name Field
+        -->
         <div class = "websiteItem">
             <input type="text" placeholder="Schedule Name">
         </div>
 
+        <!--
+            'Day and Time' field
+        -->
         <div class = "websiteItem" style = "overflow: auto">
             <div class = "header-center">
                 <label class = "headingLabel"> Day and Time</label>
             </div>
             <!--
                 https://stackoverflow.com/questions/44299150/set-text-inside-a-check-box
-                see THIS resource in order to make the text appear IN the textbox
+                see THIS resource in order to make the text appear IN the textbox, like in the
+                Figma file.
             -->
             <ul class = "day-list">
                 <li class = "day-checkbox">
@@ -42,7 +55,8 @@
                 </li>
 
                 <li class = "day-checkbox">
-                    <input id="wednesday" name="wednesday" type="checkbox">W
+                    <input id="wednesday" name="wednesday" type="checkbox">
+                    <label id="wednesday" for="wednesday">W</label>
                 </li>
 
                 <li class = "day-checkbox">
@@ -83,6 +97,9 @@
 
         </div>
 
+        <!--
+            'Blocked Websites' field, with forced scrolling
+        -->
         <div class = "websiteItemScrollable">
             <div class = "header">
                 <button class = "addButton">+</button>
@@ -119,6 +136,9 @@
             </ul>
         </div>
 
+        <!--
+            'Distraction Barrier' field
+        -->
         <div class = websiteItem>
             <div class = "header">
                 <button class = "addButton" style = "font-size: small; width: 50px">Edit</button>
