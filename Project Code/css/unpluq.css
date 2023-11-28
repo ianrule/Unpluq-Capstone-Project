@@ -148,4 +148,13 @@ Miscellaneous
     border: none;
   }
 
+  .day-checkbox{
+    list-style-type: none;
+    display: inline-block;
+  }
+  
+  .day-list{
+    display: table;
+    margin-right: auto;
+  }
   /*# sourceMappingURL=unpluq.css.map */
