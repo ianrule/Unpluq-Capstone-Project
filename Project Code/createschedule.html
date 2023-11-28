@@ -22,9 +22,9 @@
             <input type="text" placeholder="Schedule Name">
         </div>
 
-        <div class = "websiteItem">
+        <div class = "websiteItem" style = "overflow: auto">
             <div class = "header-center">
-                <h4>Day and Time</h4>
+                <label class = "headingLabel"> Day and Time</label>
             </div>
             <!--
                 https://stackoverflow.com/questions/44299150/set-text-inside-a-check-box
@@ -84,8 +84,11 @@
         </div>
 
         <div class = "websiteItemScrollable">
-            <div class = "header-center">
-                <h4>Blocked websites</h4>
+            <div class = "header">
+                <button class = "addButton">+</button>
+                <div class = "header-center">
+                    <label class = "headingLabel">Blocked Websites</label>
+                </div>
             </div>
             
             <ul class = "vertical-list">
@@ -114,6 +117,19 @@
                     <label id="block_theverge" for="block_theverge">The Verge</label>
                 </li>
             </ul>
+        </div>
+
+        <div class = websiteItem>
+            <div class = "header">
+                <button class = "addButton" style = "font-size: small; width: 50px">Edit</button>
+                <div class = "header-center">
+                    <label class = "headingLabel">Distraction Barrier</label>
+                </div>
+            </div>
+            <div style = "margin-top: 10px">
+                <label class = "headingLabel">Tap Buttons</label>
+                <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
+            </div>
         </div>
     </div>
 </body>

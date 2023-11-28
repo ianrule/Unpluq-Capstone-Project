@@ -83,7 +83,6 @@ Miscellaneous
     position: relative;
     width: auto;
     height: auto;
-    overflow:auto;
     padding: 0;
     margin-top: 10px;
     margin-left: 10px;
@@ -147,6 +146,7 @@ Miscellaneous
     text-align:center;
     color: var(--label-text-colors-primary);
     padding: 0;
+    margin-top: 10px;
   }
 
   a{
@@ -165,6 +165,7 @@ Miscellaneous
   .day-checkbox{
     list-style-type: none;
     display: inline-block;
+    color: white;
   }
   
   .day-list{
@@ -184,4 +185,53 @@ Miscellaneous
 
   }
 
+  .addButton{
+    height:25px;
+    width:25px;
+    float:right;
+    margin-right: 10px;
+  }
+
+  .headingLabel{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 5px;
+    font-family: Montserrat;
+    color:white;
+  }
+
+.slider {
+  -webkit-appearance: none;  
+  appearance: none;
+  width: 30%;
+  height: 15px; /* Specified height */
+  background: #d3d3d3; 
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 5px;
+}
+
+.slider:hover {
+  opacity: 1; 
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 25px; 
+  height: 25px; 
+  border-radius: 50%; 
+  background: yellow; 
+  cursor: pointer; 
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; 
+  height: 25px; 
+  background: yellow; 
+  cursor: pointer; 
+  border-radius: 50%;
+}
   /*# sourceMappingURL=unpluq.css.map */
