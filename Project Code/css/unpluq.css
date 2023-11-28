@@ -1,0 +1,151 @@
+/*---------------------------
+    CSS Index  
+*****************************
+
+Default (Application Wide)
+    D1) Variables
+    D2) Typography
+
+Miscellaneous
+
+-----------------------------*/
+
+/*-------------------------------
+    Default (Application Wide)
+---------------------------------*/
+/* D1) Variables */
+:root {
+    /* colors */
+    /* brand colors */
+    --brand-colors-primary: #FFE606;
+    --brand-colors-primary-40: rgba(255, 230, 6, 0.40);
+    --brand-colors-primary-20: rgba(255, 230, 6, 0.20);
+    --brand-colors-unpluq-white: #FEF9F5;
+    /* label/brand colors */
+    --label-text-colors-primary: #FFF;
+    --label-text-colors-secondary: rgba(235, 235, 245, 0.60);
+    --label-text-colors-tertiary: rgba(235, 235, 245, 0.30);
+    --label-text-colors-quarternary: rgba(235, 235, 245, 0.18);
+    /* fill colors */
+    --fill-colors-primary: rgba(128, 128, 120, 0.32);
+    --fill-colors-secondary: rgba(128, 128, 120, 0.24);
+    --fill-colors-tertiary: rgba(128, 128, 120, 0.18);
+    --fill-colors-quarternary: rgba(128, 128, 120, 0.18);
+    /* seperator colors */
+    --icon-colors-opaque: #38383A;
+    --icon-colors-non-opaque: #777;
+    /* background colors */
+    --background-colors-primary: #000;
+    --background-colors-secondary: #222;
+    --background-colors-tertiary: #333;
+  }
+  
+  /* D2) Typography */
+  h4, h3, h2, h1 {
+    font-family: Montserrat;
+    font-style: normal;
+  }
+  
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  
+  h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  
+  /*-------------------------------
+      Miscellaneous
+  ---------------------------------*/
+  .card {
+    position: relative;
+    width: 300px;
+    height: 500px;
+  }
+  
+  .websiteItem {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 0.2;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--background-colors-tertiary);
+  }
+  
+  .websiteItemName {
+    position: relative;
+    left: 0.2em;
+    font-size: 2em;
+  }
+  
+  .websiteItemSwitch {
+    position: absolute;
+    top: 0;
+    right: 0.2em;
+    height: 2em;
+  }
+  
+  button {
+    width: 50%;
+    height: 2em;
+    margin-top: 1em;
+    /* margin-left:25%; */
+  }
+  
+  .header{
+    overflow: hidden;
+    background-color: var(--background-colors-tertiary);
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-left{
+    float:left;
+    color: var(--label-text-colors-primary);
+    padding-left: 5px;
+    
+  }
+
+  .header-right{
+    float: right;
+    color: var(--brand-colors-primary);
+    padding-right: 5px;
+  }
+
+  .header-center{
+    text-align:center;
+    color: var(--label-text-colors-primary);
+  }
+
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+  input[type=text] {
+    background-color: var(--background-colors-tertiary);
+    color:#FFF;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+  }
+
+  /*# sourceMappingURL=unpluq.css.map */
