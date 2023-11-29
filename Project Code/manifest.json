@@ -1,5 +1,9 @@
 {
     "manifest_version": 3,
+    "permissions": [
+      "storage",
+      "tabs"
+    ],
     "name": "Unpluq",
     "description": "Website Blocker",
     "version": "1.0",
