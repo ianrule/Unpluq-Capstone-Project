@@ -1,0 +1,152 @@
+<!-- pulled from Kaleb's "createschedule.html" file -->
+
+<!DOCTYPE html>
+<head>
+    <!-- css -->
+    <link rel="stylesheet" href="../unpluq.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- schedule page header -->
+        <header>
+            <div class="header-left">
+                <h3><a href="../home-page/home.html">Cancel</a></h3>
+            </div>
+            <h3>Create Schedule</h3>
+            <div class = "header-right">
+                <h3><a href="../home-page/home.html">Save</a></h3>
+            </div>
+        </header>
+        
+        <!-- did not get around to editing everything below this line -->
+
+        <!--
+            Schedule Name Field
+        -->
+        <div class = "websiteItem">
+            <input type="text" placeholder="Schedule Name">
+        </div>
+
+        <!--
+            'Day and Time' field
+        -->
+        <div class = "websiteItem" style = "overflow: auto">
+            <div class = "header-center">
+                <label class = "headingLabel"> Day and Time</label>
+            </div>
+            <!--
+                https://stackoverflow.com/questions/44299150/set-text-inside-a-check-box
+                see THIS resource in order to make the text appear IN the textbox, like in the
+                Figma file.
+            -->
+            <ul class = "day-list">
+                <li class = "day-checkbox">
+                    <input id="monday" name="monday" type="checkbox">
+                    <label id="monday" for="monday">M</label>
+                </li>
+
+                <li class = "day-checkbox">
+                    <input id="tuesday" name="tuesday" type="checkbox">
+                    <label id="tuesday" for="tuesday">T</label>
+                </li>
+
+                <li class = "day-checkbox">
+                    <input id="wednesday" name="wednesday" type="checkbox">
+                    <label id="wednesday" for="wednesday">W</label>
+                </li>
+
+                <li class = "day-checkbox">
+                    <input id="thursday" name="thursday" type="checkbox">
+                    <label id="thursday" for="thursday">T</label>
+                </li>
+
+                <li class = "day-checkbox">
+                    <input id="friday" name="friday" type="checkbox">
+                    <label id="friday" for="friday">F</label>
+                </li>
+
+                <li class = "day-checkbox">
+                    <input id="saturday" name="saturday" type="checkbox">
+                    <label id="saturday" for="saturday">S</label>
+                </li>
+
+                <li class = "day-checkbox">
+                    <input id="sunday" name="sunday" type="checkbox">
+                    <label id="sunday" for="sunday">S</label>
+                </li>
+            </ul>
+
+            <div>
+                <h4><input type="text" placeholder="HH:MM" style = "float:right; width: 80px"></input></h4>
+                <h4><label style ="color: white; text-align: left" > Start </label></h4>
+            </div>
+
+            <div>
+                <h4><input type="text" placeholder="HH:MM" style = "float:right; width: 80px"></input></h4>
+                <h4><label style ="text-align: left; color: white;" > End </label></h4>
+            </div>
+
+            <div>
+                <input id="allday" name="allday" type="checkbox" style = "float:right">
+                <h4><label style ="text-align: left; color: white" > All day? </label></h4>
+            </div>
+
+        </div>
+
+        <!--
+            'Blocked Websites' field, with forced scrolling
+        -->
+        <div class = "websiteItemScrollable">
+            <div class = "header">
+                <button class = "addButton">+</button>
+                <div class = "header-center">
+                    <label class = "headingLabel">Blocked Websites</label>
+                </div>
+            </div>
+            
+            <ul class = "vertical-list">
+                <li class = "vertical-checkbox">
+                    <input id="block_instagram" name="instagram" type="checkbox">
+                    <label id="block_instagram_label" for="block_instagram">Instagram</label>
+                </li>
+
+                <li class = "vertical-checkbox">
+                    <input id="block_reddit" name="reddit" type="checkbox">
+                    <label id="block_reddit_label" for="block_reddit">Reddit</label>
+                </li>
+
+                <li class = "vertical-checkbox">
+                    <input id="block_youtube" name="youtube" type="checkbox">
+                    <label id="block_youube_label" for="block_youtube">Instagram</label>
+                </li>
+
+                <li class = "vertical-checkbox">
+                    <input id="block_tiktok" name="tiktok" type="checkbox">
+                    <label id="block_tiktok_label" for="block_tiktok">Tiktok</label>
+                </li>
+
+                <li class = "vertical-checkbox">
+                    <input id="block_theverge" name="theverge" type="checkbox">
+                    <label id="block_theverge" for="block_theverge">The Verge</label>
+                </li>
+            </ul>
+        </div>
+
+        <!--
+            'Distraction Barrier' field
+        -->
+        <div class = websiteItem>
+            <div class = "header">
+                <button class = "addButton" style = "font-size: small; width: 50px">Edit</button>
+                <div class = "header-center">
+                    <label class = "headingLabel">Distraction Barrier</label>
+                </div>
+            </div>
+            <div style = "margin-top: 10px">
+                <label class = "headingLabel">Tap Buttons</label>
+                <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

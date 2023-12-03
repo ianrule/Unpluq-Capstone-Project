@@ -1,0 +1,324 @@
+/*---------------------------
+Unpluq CSS Index  
+*****************************
+
+1) Imports
+2) Variables
+3) Typography
+4) Default Page Layout
+5) Buttons
+6) To Be Organized
+
+-----------------------------*/
+
+/*---------------------------
+1) Imports
+-----------------------------*/
+/* monsterrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/*---------------------------
+2) Variables 
+-----------------------------*/
+:root {
+  /* colors */
+    /* brand colors */
+    --brand-colors-primary: #FFE606;
+    --brand-colors-primary-40: rgba(255, 230, 6, 0.40);
+    --brand-colors-primary-20: rgba(255, 230, 6, 0.20);
+    --brand-colors-unpluq-white: #FEF9F5;
+    /* label/brand colors */
+    --label-text-colors-primary: #FFF;
+    --label-text-colors-secondary: rgba(235, 235, 245, 0.60);
+    --label-text-colors-tertiary: rgba(235, 235, 245, 0.30);
+    --label-text-colors-quarternary: rgba(235, 235, 245, 0.18);
+    /* fill colors */
+    --fill-colors-primary: rgba(128, 128, 120, 0.32);
+    --fill-colors-secondary: rgba(128, 128, 120, 0.24);
+    --fill-colors-tertiary: rgba(128, 128, 120, 0.18);
+    --fill-colors-quarternary: rgba(128, 128, 120, 0.18);
+    /* seperator colors */
+    --icon-colors-opaque: #38383A;
+    --icon-colors-non-opaque: #777;
+    /* background colors */
+    --background-colors-primary: #000;
+    --background-colors-secondary: #222;
+    --background-colors-tertiary: #333;
+}
+  
+/*---------------------------
+3) Typography 
+-----------------------------*/
+/* headings */
+h4, h3, h2, h1 {
+  color: var(--label-text-colors-primary);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+}
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+}
+h3 {
+  font-size: 20px;
+  line-height: 28px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* body text */
+p {
+  color: var(--label-text-colors-primary);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+/*---------------------------
+4) Default Page Layout 
+-----------------------------*/
+/* body */
+body {
+  margin:0;
+  padding:0;
+}
+/* page container */
+.page-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  background-color: var(--background-colors-primary);
+  border-radius: 16px;
+  margin: 0;
+  padding: 0;
+}
+  /* header styling */
+  .page-container header {
+    width: 100%;
+    height: 80px;
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-colors-secondary);
+  }
+  .page-container header .header-left {
+    position: absolute;
+    left: 16px;
+  }
+  .page-container header .header-right {
+    position: absolute;
+    right: 16px;
+  }
+  /* main content styling */
+  .page-container main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    .page-container main section {
+      box-sizing: border-box;
+      width: 343px;
+      margin: 16px 0;
+      padding: 16px;
+      background-color: var(--background-colors-tertiary);
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .page-container main section:nth-of-type(n+2) {
+      margin-top: 0;
+    }
+
+/*---------------------------
+5) Buttons
+-----------------------------*/
+.primary-btn {
+  display: flex;
+  width: 311px;
+  height: 56px;
+  padding: 14px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  background: var(--brand-colors-primary);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+.icon-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--brand-colors-primary);
+  margin-top: 0;
+}
+
+/*---------------------------
+(3) To Be Organized 
+-----------------------------*/
+
+.websiteItem{
+  position:relative;
+  width:100%;
+  height:auto;
+  padding:0.2;
+  /* background-color:blue; */
+}
+
+.websiteItemName{
+  position:relative;
+  left:0.2em;
+  font-size:2em;
+}
+
+.websiteItemSwitch{
+  position:absolute;
+  top:0;
+  right:0.2em;
+  height:2em;
+}
+
+/* Kaleb's */
+
+.websiteItem {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: var(--background-colors-tertiary);
+}
+
+.websiteItemScrollable {
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow-y: scroll; height:100px;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: var(--background-colors-tertiary);
+}
+
+.websiteItemName {
+  position: relative;
+  left: 0.2em;
+  font-size: 2em;
+}
+
+.websiteItemSwitch {
+  position: absolute;
+  top: 0;
+  right: 0.2em;
+  height: 2em;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+input[type=text] {
+  background-color: var(--background-colors-tertiary);
+  color:#FFF;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+}
+
+.day-checkbox{
+  list-style-type: none;
+  display: inline-block;
+  color: white;
+}
+
+.day-list{
+  display: table;
+  margin-right: auto;
+}
+
+.vertical-list{
+  list-style-type: none;
+}
+
+.vertical-checkbox{
+  color:white;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Montserrat;
+
+}
+
+.addButton{
+  height:25px;
+  width:25px;
+  float:right;
+  margin-right: 10px;
+}
+
+.headingLabel{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 5px;
+  font-family: Montserrat;
+  color:white;
+}
+
+.slider {
+-webkit-appearance: none;  
+appearance: none;
+width: 30%;
+height: 15px; /* Specified height */
+background: #d3d3d3; 
+outline: none;
+opacity: 0.7;
+-webkit-transition: .2s;
+transition: opacity .2s;
+border-radius: 5px;
+}
+
+.slider:hover {
+opacity: 1; 
+}
+
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none; 
+appearance: none;
+width: 25px; 
+height: 25px; 
+border-radius: 50%; 
+background: yellow; 
+cursor: pointer; 
+}
+
+.slider::-moz-range-thumb {
+width: 25px; 
+height: 25px; 
+background: yellow; 
+cursor: pointer; 
+border-radius: 50%;
+}
