@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // save_button is actually a link. the line below is to prevent it from navigating before it fetches input
         event.preventDefault();
         fetchInputs();
+        window.location.href = "../home-page/home.html"
     });
 });
 
