@@ -50,9 +50,12 @@ var blockHTML = `<!DOCTYPE html>
 if(window.location.hostname == "www.facebook.com"){
     document.body.innerHTML = blockHTML;
 }
-if(window.location.hostname == "www.youtube.com"){
+
+/*if(window.location.hostname == "www.youtube.com"){      Commented out temporarily so I can watch youtube while I code
     document.body.innerHTML = blockHTML;
 }
+*/
+
 if(window.location.hostname == "www.tiktok.com"){
     document.body.innerHTML = blockHTML;
 }

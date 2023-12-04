@@ -14,7 +14,7 @@
             </div>
             <h3>Create Schedule</h3>
             <div class = "header-right">
-                <h3><a href="../home-page/home.html">Save</a></h3>
+                <h3><a href="../home-page/home.html" id = "schedule_save">Save</a></h3>
             </div>
         </header>
         
@@ -24,7 +24,7 @@
             Schedule Name Field
         -->
         <div class = "websiteItem">
-            <input type="text" placeholder="Schedule Name">
+            <input type="text" placeholder="Schedule Name" id = "schedule_name">
         </div>
 
         <!--
@@ -41,48 +41,48 @@
             -->
             <ul class = "day-list">
                 <li class = "day-checkbox">
-                    <input id="monday" name="monday" type="checkbox">
+                    <input id="monday" name="day" type="checkbox">
                     <label id="monday" for="monday">M</label>
                 </li>
 
                 <li class = "day-checkbox">
-                    <input id="tuesday" name="tuesday" type="checkbox">
+                    <input id="tuesday" name="day" type="checkbox">
                     <label id="tuesday" for="tuesday">T</label>
                 </li>
 
                 <li class = "day-checkbox">
-                    <input id="wednesday" name="wednesday" type="checkbox">
+                    <input id="wednesday" name="day" type="checkbox">
                     <label id="wednesday" for="wednesday">W</label>
                 </li>
 
                 <li class = "day-checkbox">
-                    <input id="thursday" name="thursday" type="checkbox">
+                    <input id="thursday" name="day" type="checkbox">
                     <label id="thursday" for="thursday">T</label>
                 </li>
 
                 <li class = "day-checkbox">
-                    <input id="friday" name="friday" type="checkbox">
+                    <input id="friday" name="day" type="checkbox">
                     <label id="friday" for="friday">F</label>
                 </li>
 
                 <li class = "day-checkbox">
-                    <input id="saturday" name="saturday" type="checkbox">
+                    <input id="saturday" name="day" type="checkbox">
                     <label id="saturday" for="saturday">S</label>
                 </li>
 
                 <li class = "day-checkbox">
-                    <input id="sunday" name="sunday" type="checkbox">
+                    <input id="sunday" name="day" type="checkbox">
                     <label id="sunday" for="sunday">S</label>
                 </li>
             </ul>
 
             <div>
-                <h4><input type="text" placeholder="HH:MM" style = "float:right; width: 80px"></input></h4>
+                <h4><input type="text" placeholder="HH:MM" style = "float:right; width: 80px" id =start_time></input></h4>
                 <h4><label style ="color: white; text-align: left" > Start </label></h4>
             </div>
 
             <div>
-                <h4><input type="text" placeholder="HH:MM" style = "float:right; width: 80px"></input></h4>
+                <h4><input type="text" placeholder="HH:MM" style = "float:right; width: 80px" id = end_time></input></h4>
                 <h4><label style ="text-align: left; color: white;" > End </label></h4>
             </div>
 
@@ -106,27 +106,27 @@
             
             <ul class = "vertical-list">
                 <li class = "vertical-checkbox">
-                    <input id="block_instagram" name="instagram" type="checkbox">
+                    <input id="block_instagram" name="blocked_website" type="checkbox" value = "www.instagram.com">
                     <label id="block_instagram_label" for="block_instagram">Instagram</label>
                 </li>
 
                 <li class = "vertical-checkbox">
-                    <input id="block_reddit" name="reddit" type="checkbox">
+                    <input id="block_reddit" name="blocked_website" type="checkbox" value = "www.reddit.com">
                     <label id="block_reddit_label" for="block_reddit">Reddit</label>
                 </li>
 
                 <li class = "vertical-checkbox">
-                    <input id="block_youtube" name="youtube" type="checkbox">
+                    <input id="block_youtube" name="blocked_website" type="checkbox" value = "www.youtube.com">
                     <label id="block_youube_label" for="block_youtube">Instagram</label>
                 </li>
 
                 <li class = "vertical-checkbox">
-                    <input id="block_tiktok" name="tiktok" type="checkbox">
+                    <input id="block_tiktok" name="blocked_website" type="checkbox" value = "www.tiktok.com">
                     <label id="block_tiktok_label" for="block_tiktok">Tiktok</label>
                 </li>
 
                 <li class = "vertical-checkbox">
-                    <input id="block_theverge" name="theverge" type="checkbox">
+                    <input id="block_theverge" name="blocked_website" type="checkbox" value = "www.tiktok.com">
                     <label id="block_theverge" for="block_theverge">The Verge</label>
                 </li>
             </ul>
@@ -144,9 +144,10 @@
             </div>
             <div style = "margin-top: 10px">
                 <label class = "headingLabel">Tap Buttons</label>
-                <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
+                <input type="range" min=1 max=5 value=3 class="slider" id="difficulty_range">
             </div>
         </div>
     </div>
+    <script src="./js/schedule_creation.js"></script>
 </body>
 </html>
