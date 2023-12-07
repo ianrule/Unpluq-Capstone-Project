@@ -1,5 +1,3 @@
-// pulled from Nikita's "block.js" file
-
 let blockedWebsites = [];
 
 function addElement(myURL){
@@ -8,7 +6,7 @@ function addElement(myURL){
     var blockedWebsiteI = document.createElement('input');
 
 
-    blockedWebsiteP.innerHTML = myURL;
+    blockedWebsiteP.innerHTML = myURL.href;
     blockedWebsiteP.classList.add("websiteItemName");
     blockedWebsite.appendChild(blockedWebsiteP);
 
@@ -23,7 +21,7 @@ function addElement(myURL){
 
 function loadData(){
     for(i in blockedWebsites){
-        addElement(i);
+        addElement(blockedWebsites[i]);
     }
 }
 
@@ -34,7 +32,7 @@ function addToList(){
         if (!blockedWebsites.includes(currentWebsite)) {
             blockedWebsites.push(currentWebsite);
             chrome.storage.sync.set({ blockedWebsites: blockedWebsites }, function () {
-                console.log(`${currentWebsite} has been added to the blocked list.`);
+                // console.log(`${currentWebsite} has been added to the blocked list.`);
             });
             document.getElementById("blockList").appendChild(addElement(currentWebsite));
         }

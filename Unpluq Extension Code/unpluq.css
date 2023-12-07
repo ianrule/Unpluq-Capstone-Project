@@ -179,27 +179,6 @@ body {
 (3) To Be Organized 
 -----------------------------*/
 
-.websiteItem{
-  position:relative;
-  width:100%;
-  height:auto;
-  padding:0.2;
-  /* background-color:blue; */
-}
-
-.websiteItemName{
-  position:relative;
-  left:0.2em;
-  font-size:2em;
-}
-
-.websiteItemSwitch{
-  position:absolute;
-  top:0;
-  right:0.2em;
-  height:2em;
-}
-
 /* Kaleb's */
 
 .form-group{
