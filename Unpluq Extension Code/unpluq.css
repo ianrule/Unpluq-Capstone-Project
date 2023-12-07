@@ -37,6 +37,7 @@ Unpluq CSS Index
     --fill-colors-secondary: rgba(128, 128, 120, 0.24);
     --fill-colors-tertiary: rgba(128, 128, 120, 0.18);
     --fill-colors-quarternary: rgba(128, 128, 120, 0.18);
+    --fill-colors-pentiary: #80807852
     /* seperator colors */
     --icon-colors-opaque: #38383A;
     --icon-colors-non-opaque: #777;
@@ -201,6 +202,28 @@ body {
 
 /* Kaleb's */
 
+.form-group{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group label{
+  color: var(--label-text-colors-primary);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: Montserrat;
+}
+
+.form-group input{
+  max-width: 60px;
+  height: 100%
+
+}
+
 .websiteItem {
   position: relative;
   width: auto;
@@ -250,19 +273,53 @@ input[type=text] {
   border: none;
 }
 
-.day-checkbox{
-  list-style-type: none;
-  display: inline-block;
-  color: white;
+.day-list{
+  margin:0;
+  padding:30px;
+  width: 100%;
+  display:flex;
+  justify-content: center;
 }
 
-.day-list{
-  display: table;
-  margin-right: auto;
+.day-checkbox{
+  list-style-type: none;
+  list-style-position:outside;
+  padding: 2px;
+}
+
+input[name="day"] + label {
+  cursor: pointer;
+  border: 0.5px solid black;
+  color: white;
+  background-color: var(--fill-colors-primary);
+  padding:15px;
+  border-radius: 8px;
+  font-family: Montserrat;
+  font-weight:700;
+  font-size: 16px;
+}
+
+input[name="day"]:checked + label{
+  cursor: pointer;
+  background-color: var(--fill-colors-pentiary);
+  border: 0.5px solid black;
+  color: black;
+  background-color: #FFE606;
+  font-family: Montserrat;
+  font-weight:700;
+  font-size: 16px;
+  
+}
+
+input[name="day"]:not(:checked), 
+input[name="day"]:checked {
+  position: absolute;
+  left: -9999%;
 }
 
 .vertical-list{
   list-style-type: none;
+  overflow-y: scroll;
 }
 
 .vertical-checkbox{
