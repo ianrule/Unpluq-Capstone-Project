@@ -2,6 +2,7 @@
 <head>
     <!-- css -->
     <link rel="stylesheet" href="../unpluq.css">
+    <script src="../blocking-functionality/blocked_screen.js"></script>
 </head>
 <body>
     <div class="page-container">
@@ -21,8 +22,8 @@
         <main>
             <section id="currently-blocked">
                 <h4>Currently Blocked</h4>
-                <p>Links to schedule_list.html for now!</p>
-                <a href="../schedule-page/schedule_list.html">
+                <p>Links to Nikita's list.html file for now!</p>
+                <a href="../nikitas-code/list.html">
                     <button class="primary-btn">Block List</button>
                 </a>
             </section>
@@ -32,16 +33,18 @@
             </section>
             <section id="schedule-creation">
                 <h4>Schedule Creation</h4>
-                <p>Links to schedule_creation.html for now!</p>
-                <a href="../schedule-page/schedule_creation.html">
+                <p>Links to create_schedule.html for now!</p>
+                <a href="../schedule-page/create_schedule.html">
                     <button class="primary-btn">Create Schedule</button>
                 </a>
             </section>
-            <!-- <div class="time-input">
-                <input type="number" placeholder="Hours" min="0">
-                <input type="number" placeholder="Minutes" min="0" max="59">
+            <div class="time-input">
+                <input type="number" id="hours" placeholder="Hours" min="0">
+                <input type="number" id="minutes" placeholder="Minutes" min="0" max="59">
             </div>
-            <button>Start Block Timer</button> -->
+            <button id="startTimer">Start Block Timer</button>
+            <button id="stopTimer">Stop Timer</button>
+            <div id="timerDisplay"></div>
         </main>
     </div>
 </body>

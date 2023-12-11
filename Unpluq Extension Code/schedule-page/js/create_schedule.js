@@ -60,7 +60,3 @@ function fetchBlockedWebsites(){
 
     return blockedWebsites;
 }
-
-function checkValidInput(){
-    
-}
