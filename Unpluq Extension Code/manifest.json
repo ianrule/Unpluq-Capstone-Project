@@ -19,7 +19,7 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["unpluq.jpg"],
+      "resources": ["inject_block.html"],
       "matches": ["<all_urls>"]
     }
   ],

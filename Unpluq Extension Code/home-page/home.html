@@ -2,7 +2,7 @@
 <head>
     <!-- css -->
     <link rel="stylesheet" href="../unpluq.css">
-    <script src="../blocking-functionality/blocked_screen.js"></script>
+    <script src="../blocked-page/block_screen.js"></script>
 </head>
 <body>
     <div class="page-container">
@@ -38,13 +38,15 @@
                     <button class="primary-btn">Create Schedule</button>
                 </a>
             </section>
-            <div class="time-input">
+            <button class="primary-btn" id="startBlocking">Block Websites</button>
+            <!-- could maybe be useful in the future -->
+            <!-- <div class="time-input">
                 <input type="number" id="hours" placeholder="Hours" min="0">
                 <input type="number" id="minutes" placeholder="Minutes" min="0" max="59">
-            </div>
-            <button id="startTimer">Start Block Timer</button>
+            </div> -->
+            <!-- <button id="startTimer">Start Block Timer</button>
             <button id="stopTimer">Stop Timer</button>
-            <div id="timerDisplay"></div>
+            <div id="timerDisplay"></div> -->
         </main>
     </div>
 </body>
