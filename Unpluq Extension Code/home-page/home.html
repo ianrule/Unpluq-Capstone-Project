@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <!-- css -->
+    <link rel="stylesheet" href="../unpluq.css">
+    <script src="../blocked-page/block_screen.js"></script>
+</head>
+<body>
+    <div class="page-container">
+        <!-- page header -->
+        <header>
+            <!-- logo -->
+            <img src="img/unpluq_header_logo.png" alt="Unpluq Logo">
+            <!-- profile icon -->
+            <div class="header-right">
+                <button class="icon-btn">
+                    <img src="icon/profile.svg">
+                </button>
+            </div>
+        </header>
+
+        <!-- main content -->
+        <main>
+            <section id="currently-blocked">
+                <h4>Currently Blocked</h4>
+                <p>Links to Nikita's list.html file for now!</p>
+                <a href="../nikitas-code/list.html">
+                    <button class="primary-btn">Block List</button>
+                </a>
+            </section>
+            <section id="block-this-website">
+                <h4>Block This Website</h4>
+                <p>Coming soon!</p>
+            </section>
+            <section id="schedule-creation">
+                <h4>Schedule Creation</h4>
+                <p>Links to create_schedule.html for now!</p>
+                <a href="../schedule-page/create_schedule.html">
+                    <button class="primary-btn">Create Schedule</button>
+                </a>
+            </section>
+            <div class="time-input">
+                <input type="number" id="hours" placeholder="Hours" min="0">
+                <input type="number" id="minutes" placeholder="Minutes" min="0" max="59">
+            </div>
+            <button id="startTimer">Start Block Timer</button>
+            <button id="stopTimer">Stop Timer</button>
+            <div id="timerDisplay"></div>
+        </main>
+    </div>
+</body>
+</html>
