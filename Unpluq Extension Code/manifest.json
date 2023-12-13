@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Unpluq",
+  "description": "Website Blocker",
+  "version": "1.0",
+  "action": {
+    "default_popup": "home-page/home.html",
+    "default_icon": "extension_logo.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["blocked-page/block_screen.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["unpluq.jpg"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "service_worker": "blocked-page/mute_screen.js"
+  }
+}

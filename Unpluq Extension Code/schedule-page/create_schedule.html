@@ -1,0 +1,128 @@
+<!-- pulled from Kaleb's "createschedule.html" file -->
+
+<!DOCTYPE html>
+<head>
+    <!-- css -->
+    <link rel="stylesheet" href="../unpluq.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- schedule page header -->
+        <header>
+            <div class="header-left">
+                <h3 ><a href="../home-page/home.html">Cancel</a></h3>
+            </div>
+            <h3>Create Schedule</h3>
+            <div class = "header-right">
+                <h3 style = "color:#FFE606"><a href="../home-page/home.html" id = "schedule_save">Save</a></h3>
+            </div>
+        </header>
+        
+        <main>
+
+            <!-- Schedule Name Section -->
+            <section id = "section_schedule_name">
+                <input type="text" placeholder="Schedule Name" id = "schedule_name">
+            </section>
+
+            <!-- Day and Time Section -->
+            <section id = "Day and Time">
+                <h4>Day and Time</h4>
+                <!-- Day and Time Checklist, Note:
+                https://stackoverflow.com/questions/44299150/set-text-inside-a-check-box
+                see THIS resource in order to make the text appear IN the textbox, like in the
+                Figma file. -->
+                <ul class = "day-list">
+                    <li class = "day-checkbox">
+                        <input id="monday" name="day" type="checkbox">
+                        <label id="monday" for="monday">M</label>
+                    </li>
+    
+                    <li class = "day-checkbox">
+                        <input id="tuesday" name="day" type="checkbox">
+                        <label id="tuesday" for="tuesday">T</label>
+                    </li>
+    
+                    <li class = "day-checkbox">
+                        <input id="wednesday" name="day" type="checkbox">
+                        <label id="wednesday" for="wednesday">W</label>
+                    </li>
+    
+                    <li class = "day-checkbox">
+                        <input id="thursday" name="day" type="checkbox">
+                        <label id="thursday" for="thursday">T</label>
+                    </li>
+    
+                    <li class = "day-checkbox">
+                        <input id="friday" name="day" type="checkbox">
+                        <label id="friday" for="friday">F</label>
+                    </li>
+    
+                    <li class = "day-checkbox">
+                        <input id="saturday" name="day" type="checkbox">
+                        <label id="saturday" for="saturday">S</label>
+                    </li>
+    
+                    <li class = "day-checkbox">
+                        <input id="sunday" name="day" type="checkbox">
+                        <label id="sunday" for="sunday">S</label>
+                    </li>
+                </ul>
+                
+                <div class = "form-group">
+                    <label for ="start_time">Start</label>
+                    <input type="text" placeholder="HH:MM" id =start_time></input>
+                </div>
+
+                <div class = "form-group">
+                    <label for ="end_time">End</label>
+                    <input type="text" placeholder="HH:MM" id =end_time></input>
+                </div>
+
+                <div class = "form-group">
+                    <p><label for ="all_day">All day?</label></p>
+                    <input type="checkbox" id =all_day></input>
+                </div>
+
+            </section>
+
+            <section>
+                <h4>Blocked Websites</h4>
+                <ul class = "vertical-list">
+                    <li class = "vertical-checkbox">
+                        <label id="block_instagram_label" for="block_instagram">Instagram</label>
+                        <input id="block_instagram" name="blocked_website" type="checkbox" value = "www.instagram.com">
+                    </li>
+
+                    <li class = "vertical-checkbox">
+                        <label id="block_reddit_label" for="block_reddit">Reddit</label>
+                        <input id="block_reddit" name="blocked_website" type="checkbox" value = "www.reddit.com">
+                    </li>
+
+                    <li class = "vertical-checkbox">
+                        <label id="block_youtube_label" for="block_youtube">Youtube</label>
+                        <input id="block_youtube" name="blocked_website" type="checkbox" value = "www.youtube.com">
+                    </li>
+
+                    <li class = "vertical-checkbox">
+                        <label id="block_tiktok_label" for="block_tiktok">Tiktok</label>
+                        <input id="block_tiktok" name="blocked_website" type="checkbox" value = "www.tiktok.com">
+                    </li>
+
+                    <li class = "vertical-checkbox">
+                        <label id="block_theverge" for="block_theverge">The Verge</label>
+                        <input id="block_theverge" name="blocked_website" type="checkbox" value = "www.tiktok.com">
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h4>Distraction Barrier</h4>
+                <input type="range" min=1 max=5 value=3 class="slider" id="difficulty_range">
+            </section>
+
+        </main>
+    </div>
+    <script src="./js/schedule_creation.js"></script>
+</body>
+</html>
